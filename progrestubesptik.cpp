@@ -179,7 +179,7 @@ int main() {
         std::cout << "Masukkan Pilihan : ";
         std::cin >> pilihan;
         
-	// Memproses pilihan menu
+		// Memproses pilihan menu
         switch (pilihan) {
             case '1': {
                 // Input data dosen baru
@@ -262,9 +262,9 @@ int main() {
                     //Ubah input menjadi huruf besar
                     std::transform(dosen.hariMengajar.begin(), dosen.hariMengajar.end(), dosen.hariMengajar.begin(), ::toupper);
                                         
-                } while (!database.isValidHari(dosen.hariMengajar))  
-				
-				 // Validasi Umur
+                } while (!database.isValidHari(dosen.hariMengajar))   
+
+                // Validasi Umur
                 do {
                     std::cout << "Masukkan Umur Dosen: ";
                     std::string umurStr;
@@ -296,4 +296,4 @@ int main() {
             case '2':
                 // Menampilkan semua data dosen
                 database.lihatDataDosen();
-                break;    
+                break;   
